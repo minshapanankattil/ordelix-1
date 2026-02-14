@@ -6,14 +6,12 @@
 
 ## Basic Details
 
-### Team Name: [INSERT TEAM NAME HERE]
+### Team Name:Minsha
 
 ### Team Members
-- Member 1: [INSERT NAME HERE] - [INSERT COLLEGE HERE]
-- Member 2: [INSERT NAME HERE] - [INSERT COLLEGE HERE]
-
+- Member 1: Minsha
 ### Hosted Project Link
-[INSERT HOSTED LINK HERE]
+(https://ordelix-1.vercel.app/)
 
 ### Project Description
 Ordelix is a premium commerce platform designed specifically for artisan businesses in India. It simplifies complex business operations like labor-intensive pricing, material tracking, and order management through an elegant, professional interface.
@@ -35,8 +33,8 @@ Ordelix provides an "Artisan Studio" that automates stock tracking, offers AI-dr
 - **Framework:** Next.js 16 (App Router), React 19
 - **Backend/SDK:** Appwrite Web SDK
 - **Storage:** Local JSON Database (File System based for prototype)
-- **Deployment:** [INSERT DEPLOYMENT TOOL e.g., Vercel]
-- **Tools:** VS Code, Git, Cursor (AI-assisted development)
+- **Deployment:**Verce
+- **Tools:** VS Code, Git, Antigravity (AI-assisted development)
 
 ---
 
