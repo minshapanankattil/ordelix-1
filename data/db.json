@@ -1,0 +1,234 @@
+{
+  "users": [
+    {
+      "businessName": "minz.in_",
+      "ownerName": "minsha",
+      "email": "minsha.panankattil@gmail.com",
+      "phone": "7907203752",
+      "username": "minz.in_",
+      "password": "Minsha@2005",
+      "businessType": "online",
+      "socialLink": "",
+      "address": "",
+      "id": "ef93bbb7-c9a4-40ab-8b72-9781ef5964c5",
+      "status": "pending",
+      "createdAt": "2026-02-14T01:11:05.546Z"
+    },
+    {
+      "businessName": "minz.in_",
+      "ownerName": "minsha",
+      "email": "minsha.panankattil@gmail.com",
+      "phone": "7907203752",
+      "username": "admin",
+      "password": "Shamil@2005",
+      "businessType": "online",
+      "socialLink": "",
+      "address": "",
+      "id": "706ea344-c438-4fb7-a54e-0da7bf6c2e02",
+      "status": "pending",
+      "createdAt": "2026-02-14T02:46:58.308Z"
+    },
+    {
+      "businessName": "minz.in_",
+      "ownerName": "minsha",
+      "email": "minsha.panankattil@gmail.com",
+      "phone": "7907203752",
+      "username": "admin",
+      "password": "Shamil@2005",
+      "businessType": "online",
+      "socialLink": "",
+      "address": "",
+      "id": "93fed139-e13b-445e-8c9e-cdb494fcfe44",
+      "status": "pending",
+      "createdAt": "2026-02-14T02:50:07.664Z"
+    },
+    {
+      "businessName": "minz.in_",
+      "ownerName": "minsha",
+      "email": "minsha.panankattil@gmail.com",
+      "phone": "7907203752",
+      "username": "admin",
+      "password": "admin@9898",
+      "businessType": "online",
+      "socialLink": "",
+      "address": "",
+      "id": "8c75514f-b179-47b9-a867-dca2f23e9c09",
+      "status": "pending",
+      "createdAt": "2026-02-14T02:50:48.077Z"
+    },
+    {
+      "businessName": "minz.in_",
+      "ownerName": "minsha",
+      "email": "minsha.panankattil@gmail.com",
+      "phone": "7907203752",
+      "username": "admin",
+      "password": "admin@9898",
+      "businessType": "online",
+      "socialLink": "",
+      "address": "",
+      "id": "74f7f563-0bd3-4488-a8a8-09d4425b4a74",
+      "role": "user",
+      "status": "approved",
+      "createdAt": "2026-02-14T02:53:01.351Z"
+    },
+    {
+      "businessName": "minz.in_",
+      "ownerName": "minsha",
+      "email": "minsha.panankattil@gmail.com",
+      "phone": "7907203752",
+      "username": "admin",
+      "password": "admin@9898",
+      "businessType": "online",
+      "socialLink": "",
+      "address": "",
+      "id": "7e671cdf-cd0a-40b5-9094-0f081201a478",
+      "role": "user",
+      "status": "approved",
+      "createdAt": "2026-02-14T02:53:17.398Z"
+    },
+    {
+      "businessName": "minz.in_",
+      "ownerName": "minsha",
+      "email": "minsha.panankattil@gmail.com",
+      "phone": "7907203752",
+      "username": "admin",
+      "password": "admin@9898",
+      "businessType": "online",
+      "socialLink": "",
+      "address": "",
+      "id": "4538b956-7a59-4a4c-bb18-63585a2d73aa",
+      "role": "user",
+      "status": "approved",
+      "createdAt": "2026-02-14T03:09:29.599Z"
+    },
+    {
+      "businessName": "minz.in_",
+      "ownerName": "minsha",
+      "email": "minsha.panankattil@gmail.com",
+      "phone": "1234567890",
+      "username": "admin",
+      "password": "admin@9898",
+      "businessType": "online",
+      "socialLink": "",
+      "address": "",
+      "id": "c1b6f85b-bc83-48ab-a365-49f374cfc724",
+      "role": "user",
+      "status": "approved",
+      "createdAt": "2026-02-14T03:10:51.170Z"
+    },
+    {
+      "businessName": "minz.in_",
+      "ownerName": "Minsha",
+      "email": "minsha.panankattil@gmail.com",
+      "phone": "1234567890",
+      "username": "admin",
+      "password": "admin@9898",
+      "businessType": "online",
+      "socialLink": "",
+      "address": "",
+      "id": "935b99fd-1894-4876-b1cc-a58228b85c90",
+      "role": "user",
+      "status": "approved",
+      "createdAt": "2026-02-14T03:14:55.342Z"
+    }
+  ],
+  "products": [
+    {
+      "name": "ramadan hamper",
+      "description": "quran \nprayer mat\nbook mark\nthasbeeh\ntally counter",
+      "laborHours": 0.15,
+      "complexity": 1,
+      "materials": [],
+      "id": "461aabc1-d7f9-4e45-9dc0-1a2df1d64378",
+      "createdAt": "2026-02-14T03:12:05.385Z"
+    }
+  ],
+  "materials": [
+    {
+      "name": "pvc box",
+      "quantity": 9,
+      "unitPrice": 120,
+      "lowStockThreshold": 3,
+      "id": "ed6ac474-0cc0-46bd-9754-c5c932d20d91"
+    },
+    {
+      "name": "prayer dress",
+      "quantity": 5,
+      "unitPrice": 350,
+      "lowStockThreshold": 10,
+      "id": "1b43e774-b112-4256-9b06-ebb3bd24a363"
+    },
+    {
+      "name": "dates",
+      "quantity": 7,
+      "unitPrice": 150,
+      "lowStockThreshold": 2,
+      "id": "5b47f895-2ee5-4d08-beb7-1802d0ad241b"
+    }
+  ],
+  "customers": [
+    {
+      "id": "c1",
+      "name": "Regular Alice",
+      "loyaltyLevel": "new",
+      "purchaseCount": 1,
+      "paymentBehavior": "good"
+    },
+    {
+      "id": "c2",
+      "name": "VIP Bob",
+      "loyaltyLevel": "gold",
+      "purchaseCount": 15,
+      "paymentBehavior": "excellent"
+    },
+    {
+      "id": "c3",
+      "name": "Silver Carol",
+      "loyaltyLevel": "silver",
+      "purchaseCount": 5,
+      "paymentBehavior": "average"
+    }
+  ],
+  "orders": [
+    {
+      "productId": "461aabc1-d7f9-4e45-9dc0-1a2df1d64378",
+      "customerId": "c1",
+      "quantity": 1,
+      "priceType": "recommended",
+      "originalPrice": 6.6,
+      "discount": 5,
+      "finalPrice": 6.27,
+      "id": "24bb7c1b-df56-4085-b872-a65d2ffc8aeb",
+      "status": "pending",
+      "isPreOrder": false,
+      "createdAt": "2026-02-14T03:13:06.715Z"
+    },
+    {
+      "productId": "461aabc1-d7f9-4e45-9dc0-1a2df1d64378",
+      "customerId": "c1",
+      "quantity": 1,
+      "priceType": "recommended",
+      "originalPrice": 6.6,
+      "discount": 5,
+      "finalPrice": 6.27,
+      "id": "a956e6eb-6c89-48f9-af10-3389bfe0223a",
+      "status": "pending",
+      "isPreOrder": false,
+      "createdAt": "2026-02-14T03:13:23.003Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "42ba3705-27c8-40e0-a399-313692689388",
+      "action": "Product Created",
+      "details": "New product added: ramadan hamper",
+      "performedBy": "Admin",
+      "timestamp": "2026-02-14T03:12:05.387Z"
+    }
+  ],
+  "settings": {
+    "bannerText": "Welcome to Ordelix - The Premium Artisan Commerce Network",
+    "featureApprovals": true,
+    "demoMode": true
+  }
+}
