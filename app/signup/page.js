@@ -50,39 +50,73 @@ export default function Signup() {
     };
 
     return (
-        <div style={{ maxWidth: '500px', margin: '50px auto', padding: '20px', border: '1px solid #ccc', borderRadius: '8px' }}>
-            <h1>Register Your Business</h1>
-            <p style={{ color: '#666' }}>Professional and neutral tone for serious business owners.</p>
+        <div className="container-lux fade-in" style={{ maxWidth: '800px' }}>
+            <div className="text-center mb-40">
+                <h1 style={{ fontSize: '42px' }}>Empower Your Craft</h1>
+                <p style={{ color: 'var(--text-soft)', fontSize: '18px' }}>Join the elite network of artisan brands.</p>
+            </div>
 
-            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-                <input name="businessName" placeholder="Business Name" required onChange={handleChange} style={inputStyle} />
-                <input name="ownerName" placeholder="Owner Name" required onChange={handleChange} style={inputStyle} />
-                <input name="phone" placeholder="Phone Number" required onChange={handleChange} style={inputStyle} />
-                <input name="email" type="email" placeholder="Email Address" required onChange={handleChange} style={inputStyle} />
-                <input name="username" placeholder="Username" required onChange={handleChange} style={inputStyle} />
-                <input name="password" type="password" placeholder="Password" required onChange={handleChange} style={inputStyle} />
-
-                <div>
-                    <label>Business Type:</label>
-                    <select name="businessType" value={formData.businessType} onChange={handleChange} style={inputStyle}>
-                        <option value="online">Online</option>
-                        <option value="offline">Offline</option>
-                    </select>
+            <form onSubmit={handleSubmit} className="lux-card">
+                <div className="grid-2col mb-20">
+                    <div className="form-group">
+                        <label style={labelLabel}>Business Identity</label>
+                        <input name="businessName" placeholder="Business Name" required onChange={handleChange} style={inputStyle} />
+                    </div>
+                    <div className="form-group">
+                        <label style={labelLabel}>Owner Name</label>
+                        <input name="ownerName" placeholder="Full Name" required onChange={handleChange} style={inputStyle} />
+                    </div>
+                </div>
+                <div className="grid-2col mb-20">
+                    <div className="form-group">
+                        <label style={labelLabel}>Contact Phone</label>
+                        <input name="phone" placeholder="+91 ..." required onChange={handleChange} style={inputStyle} />
+                    </div>
+                    <div className="form-group">
+                        <label style={labelLabel}>Email Address</label>
+                        <input name="email" type="email" placeholder="email@example.com" required onChange={handleChange} style={inputStyle} />
+                    </div>
                 </div>
 
-                {formData.businessType === 'online' ? (
-                    <input name="socialLink" placeholder="Instagram/Facebook/WhatsApp Link" required onChange={handleChange} style={inputStyle} />
-                ) : (
-                    <>
-                        <input name="address" placeholder="Store Address" required onChange={handleChange} style={inputStyle} />
-                        <input name="location" placeholder="Location (e.g. Google Maps link)" required onChange={handleChange} style={inputStyle} />
-                    </>
-                )}
+                <div className="grid-2col mb-20">
+                    <div className="form-group">
+                        <label style={labelLabel}>Unique Username</label>
+                        <input name="username" placeholder="username" required onChange={handleChange} style={inputStyle} />
+                    </div>
+                    <div className="form-group">
+                        <label style={labelLabel}>Private Key (Password)</label>
+                        <input name="password" type="password" placeholder="••••••••" required onChange={handleChange} style={inputStyle} />
+                    </div>
+                </div>
 
-                {error && <p style={{ color: 'red' }}>{error}</p>}
+                <div className="mb-20">
+                    <div className="form-group">
+                        <label style={labelLabel}>Business Type</label>
+                        <select name="businessType" value={formData.businessType} onChange={handleChange} style={inputStyle}>
+                            <option value="online">Online Boutique / Studio</option>
+                            <option value="offline">Physical Storefront / Workshop</option>
+                        </select>
+                    </div>
+                </div>
 
-                <button type="submit" disabled={loading} style={buttonStyle}>
-                    {loading ? 'Registering...' : 'Submit Application'}
+                <div className="mb-40">
+                    <div className="form-group">
+                        <label style={labelLabel}>{formData.businessType === 'online' ? 'Social Catalog Link' : 'Physical Address'}</label>
+                        {formData.businessType === 'online' ? (
+                            <input name="socialLink" placeholder="Instagram/Facebook/WhatsApp Link" required onChange={handleChange} style={inputStyle} />
+                        ) : (
+                            <div className="grid-2col">
+                                <input name="address" placeholder="Store Address" required onChange={handleChange} style={inputStyle} />
+                                <input name="location" placeholder="Google Maps Link" required onChange={handleChange} style={inputStyle} />
+                            </div>
+                        )}
+                    </div>
+                </div>
+
+                {error && <p style={{ color: 'red', fontWeight: '700', marginBottom: '20px' }}>{error}</p>}
+
+                <button type="submit" disabled={loading} className="btn-lux" style={{ width: '100%', padding: '20px' }}>
+                    {loading ? 'Processing Registration...' : 'Finalize Onboarding'}
                 </button>
             </form>
         </div>
@@ -90,18 +124,19 @@ export default function Signup() {
 }
 
 const inputStyle = {
-    padding: '10px',
-    borderRadius: '4px',
-    border: '1px solid #ccc',
-    fontSize: '16px'
+    padding: '18px 24px',
+    borderRadius: '12px',
+    border: '1px solid var(--beige)',
+    fontSize: '16px',
+    backgroundColor: 'var(--bg-light)',
+    outline: 'none',
+    width: '100%'
 };
 
-const buttonStyle = {
-    padding: '12px',
-    borderRadius: '4px',
-    border: 'none',
-    backgroundColor: '#000',
-    color: '#fff',
-    fontSize: '16px',
-    cursor: 'pointer'
+const labelLabel = {
+    fontSize: '11px',
+    fontWeight: '800',
+    color: 'var(--text-soft)',
+    textTransform: 'uppercase',
+    letterSpacing: '1px'
 };
