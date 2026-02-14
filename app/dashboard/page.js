@@ -30,10 +30,7 @@ export default function BusinessHealthDashboard() {
         }
 
         const user = JSON.parse(storedUser);
-        if (user.role !== 'admin' && user.status !== 'approved') {
-            router.push('/pending');
-            return;
-        }
+        // Removed status check to allow immediate access
     }, [router]);
 
     useEffect(() => {
@@ -47,7 +44,7 @@ export default function BusinessHealthDashboard() {
 
     return (
         <div className="fade-in">
-            <div style={header}>
+            <div className="flex-between mb-40">
                 <div>
                     <h1 style={{ fontSize: '32px' }}>Business Intelligence</h1>
                     <p style={{ color: '#636e72' }}>Strategic overview of your handmade gift brand.</p>

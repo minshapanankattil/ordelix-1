@@ -18,10 +18,7 @@ export default function Inventory() {
         }
 
         const user = JSON.parse(storedUser);
-        if (user.role !== 'admin' && user.status !== 'approved') {
-            router.push('/pending');
-            return;
-        }
+        // Removed status check
     }, [router]);
 
     const fetchMaterials = async () => {
@@ -60,8 +57,8 @@ export default function Inventory() {
     if (loading) return <div style={{ textAlign: 'center', marginTop: '50px' }}>Loading...</div>;
 
     return (
-        <div style={{ padding: '40px', maxWidth: '1000px', margin: '0 auto' }}>
-            <h1>Inventory Management</h1>
+        <div className="container-lux fade-in">
+            <h1 className="mb-40">Inventory Management</h1>
 
             <section style={{ marginBottom: '40px', padding: '20px', border: '1px solid #eee', borderRadius: '8px' }}>
                 <h2>Add New Material</h2>

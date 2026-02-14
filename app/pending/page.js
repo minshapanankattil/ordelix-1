@@ -8,46 +8,51 @@ export default function PendingApproval() {
     const router = useRouter();
     const [user, setUser] = useState(null);
 
-    useEffect(() => {
-        const storedUser = localStorage.getItem('ordelix_user');
-        if (!storedUser) {
-            router.push('/');
-            return;
-        }
-        setUser(JSON.parse(storedUser));
-    }, [router]);
-
-    const handleLogout = () => {
-        localStorage.removeItem('ordelix_user');
+    const storedUser = localStorage.getItem('ordelix_user');
+    if (!storedUser) {
         router.push('/');
-    };
+        return;
+    }
+    const user = JSON.parse(storedUser);
+    setUser(user);
 
-    return (
-        <div style={container}>
-            <div style={luxGlass}>
-                <div style={iconBadge}>⏳</div>
-                <h1 style={title}>Account Pending Approval</h1>
-                <p style={subtitle}>
-                    Welcome to the Ordelix Studio, <strong>{user?.ownerName}</strong>!
-                    Your registration for <em>{user?.businessName}</em> is currently being reviewed by our curators.
-                </p>
+    // If approved, no need to be here
+    if (user.status === 'approved') {
+        router.push('/dashboard');
+    }
+}, [router]);
 
-                <div style={demoNotice}>
-                    <h3>✨ Studio Preview Mode</h3>
-                    <p>While we verify your business, you can explore the platform features. However, management actions and dashboard analytics are currently locked.</p>
-                </div>
+const handleLogout = () => {
+    localStorage.removeItem('ordelix_user');
+    router.push('/');
+};
 
-                <div style={actionGroup}>
-                    <Link href="/" style={backBtn}>Explore Features</Link>
-                    <button onClick={handleLogout} style={logoutBtn}>Sign Out</button>
-                </div>
+return (
+    <div style={container}>
+        <div style={luxGlass}>
+            <div style={iconBadge}>⏳</div>
+            <h1 style={title}>Account Pending Approval</h1>
+            <p style={subtitle}>
+                Welcome to the Ordelix Studio, <strong>{user?.ownerName}</strong>!
+                Your registration for <em>{user?.businessName}</em> is currently being reviewed by our curators.
+            </p>
 
-                <div style={footerText}>
-                    Typically approved within 24-48 hours. Thank you for your patience.
-                </div>
+            <div style={demoNotice}>
+                <h3>✨ Studio Preview Mode</h3>
+                <p>While we verify your business, you can explore the platform features. However, management actions and dashboard analytics are currently locked.</p>
+            </div>
+
+            <div style={actionGroup}>
+                <Link href="/" style={backBtn}>Explore Features</Link>
+                <button onClick={handleLogout} style={logoutBtn}>Sign Out</button>
+            </div>
+
+            <div style={footerText}>
+                Typically approved within 24-48 hours. Thank you for your patience.
             </div>
         </div>
-    );
+    </div>
+);
 }
 
 // Styles

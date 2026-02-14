@@ -23,10 +23,7 @@ export default function ProductList() {
         }
 
         const user = JSON.parse(storedUser);
-        if (user.role !== 'admin' && user.status !== 'approved') {
-            router.push('/pending');
-            return;
-        }
+        // Removed status check
     }, [router]);
 
     const fetchData = async () => {
@@ -105,7 +102,7 @@ export default function ProductList() {
 
     return (
         <div className="fade-in">
-            <div style={headerSection}>
+            <div className="flex-between mb-40">
                 <div>
                     <h1 style={{ fontSize: '32px' }}>Product Collection</h1>
                     <p style={{ color: '#636e72' }}>Discover and manage your premium handmade items.</p>

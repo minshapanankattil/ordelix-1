@@ -11,7 +11,7 @@
       "socialLink": "",
       "address": "",
       "id": "ef93bbb7-c9a4-40ab-8b72-9781ef5964c5",
-      "status": "pending",
+      "status": "approved",
       "createdAt": "2026-02-14T01:11:05.546Z"
     },
     {
@@ -25,7 +25,7 @@
       "socialLink": "",
       "address": "",
       "id": "706ea344-c438-4fb7-a54e-0da7bf6c2e02",
-      "status": "pending",
+      "status": "approved",
       "createdAt": "2026-02-14T02:46:58.308Z"
     },
     {
@@ -39,7 +39,7 @@
       "socialLink": "",
       "address": "",
       "id": "93fed139-e13b-445e-8c9e-cdb494fcfe44",
-      "status": "pending",
+      "status": "approved",
       "createdAt": "2026-02-14T02:50:07.664Z"
     },
     {
@@ -53,7 +53,7 @@
       "socialLink": "",
       "address": "",
       "id": "8c75514f-b179-47b9-a867-dca2f23e9c09",
-      "status": "pending",
+      "status": "approved",
       "createdAt": "2026-02-14T02:50:48.077Z"
     },
     {
@@ -199,7 +199,7 @@
       "discount": 5,
       "finalPrice": 6.27,
       "id": "24bb7c1b-df56-4085-b872-a65d2ffc8aeb",
-      "status": "pending",
+      "status": "approved",
       "isPreOrder": false,
       "createdAt": "2026-02-14T03:13:06.715Z"
     },
@@ -212,7 +212,7 @@
       "discount": 5,
       "finalPrice": 6.27,
       "id": "a956e6eb-6c89-48f9-af10-3389bfe0223a",
-      "status": "pending",
+      "status": "approved",
       "isPreOrder": false,
       "createdAt": "2026-02-14T03:13:23.003Z"
     }

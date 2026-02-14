@@ -19,11 +19,8 @@ export async function POST(request) {
             return NextResponse.json({ success: false, error: 'Invalid credentials' }, { status: 401 });
         }
 
-        // Default redirect to pending if not approved
+        // Default redirect to dashboard
         let redirectTo = '/dashboard';
-        if (user.status !== 'approved') {
-            redirectTo = '/pending';
-        }
 
         return NextResponse.json({ success: true, user, redirectTo });
     } catch (error) {
