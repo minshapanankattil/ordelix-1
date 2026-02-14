@@ -65,23 +65,16 @@ npm run dev
 
 ### Screenshots
 
-![Dashboard]([INSERT IMAGE PATH HERE])
+![Dashboard]([https://raw.githubusercontent.com/minshapanankattil/ordelix-1/e2fdca21f246c1e0428db5b6f7a0ca9a1c08f032/public/Screenshot%202026-02-14%20095852.png])
 *The Artisan Studio Dashboard showing inventory and order summaries.*
 
-![Product Creation]([INSERT IMAGE PATH HERE])
+![Product Creation]([https://raw.githubusercontent.com/minshapanankattil/ordelix-1/e2fdca21f246c1e0428db5b6f7a0ca9a1c08f032/public/Screenshot%202026-02-14%20095852.png])
 *AI-optimized product setup with material and labor factoring.*
 
-![Order Management]([INSERT IMAGE PATH HERE])
+![Order Management]([https://raw.githubusercontent.com/minshapanankattil/ordelix-1/e2fdca21f246c1e0428db5b6f7a0ca9a1c08f032/public/Screenshot%202026-02-14%20095852.png])
 *Streamlined order tracking with status updates and pre-order indicators.*
 
-#### Diagrams
 
-**System Architecture:**
-![Architecture Diagram]([INSERT IMAGE PATH HERE])
-*Next.js Frontend communicating with a local JSON DB and Appwrite SDK for backend services.*
-
-**Application Workflow:**
-![Workflow]([INSERT IMAGE PATH HERE])
 *User Signup -> Role Assignment -> Dashboard Access -> Inventory/Order Management.*
 
 ---
@@ -129,7 +122,7 @@ npm run dev
 ## Project Demo
 
 ### Video
-[INSERT VIDEO LINK HERE - YouTube/Google Drive]
+
 
 *This video demonstrates the full user journey from landing page to admin dashboard management.*
 
@@ -152,8 +145,8 @@ npm run dev
 ---
 
 ## Team Contributions
-- [INSERT NAME 1]: Full-stack Development, Appwrite Integration, Database Schema.
-- [INSERT NAME 2]: UI/UX Design, Frontend Components, Logo Design, Documentation.
+- [Minsha]: Full-stack Development, Appwrite Integration, Database Schema.
+- [Minsha]: UI/UX Design, Frontend Components, Logo Design, Documentation.
 
 ---
 
