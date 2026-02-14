@@ -201,13 +201,31 @@ export default function OrdelixSilkLux() {
                   </div>
                 </>
               ) : (
-                <div style={signupGrid}>
-                  <input style={luxInput} placeholder="Business Name" value={signupData.businessName} onChange={e => setSignupData({ ...signupData, businessName: e.target.value })} required />
-                  <input style={luxInput} placeholder="Owner Name" value={signupData.ownerName} onChange={e => setSignupData({ ...signupData, ownerName: e.target.value })} required />
-                  <input style={luxInput} placeholder="Email" type="email" value={signupData.email} onChange={e => setSignupData({ ...signupData, email: e.target.value })} required />
-                  <input style={luxInput} placeholder="Phone" value={signupData.phone} onChange={e => setSignupData({ ...signupData, phone: e.target.value })} required />
-                  <input style={luxInput} placeholder="Username" value={signupData.username} onChange={e => setSignupData({ ...signupData, username: e.target.value })} required />
-                  <input style={luxInput} placeholder="Secret Password" type="password" value={signupData.password} onChange={e => setSignupData({ ...signupData, password: e.target.value })} required />
+                <div className="grid-2col">
+                  <div className="form-group">
+                    <label style={labelStyle}>Business Name</label>
+                    <input style={luxInput} placeholder="Ordelix Shop" value={signupData.businessName} onChange={e => setSignupData({ ...signupData, businessName: e.target.value })} required />
+                  </div>
+                  <div className="form-group">
+                    <label style={labelStyle}>Owner Name</label>
+                    <input style={luxInput} placeholder="Your Name" value={signupData.ownerName} onChange={e => setSignupData({ ...signupData, ownerName: e.target.value })} required />
+                  </div>
+                  <div className="form-group">
+                    <label style={labelStyle}>Email</label>
+                    <input style={luxInput} placeholder="name@example.com" type="email" value={signupData.email} onChange={e => setSignupData({ ...signupData, email: e.target.value })} required />
+                  </div>
+                  <div className="form-group">
+                    <label style={labelStyle}>Phone</label>
+                    <input style={luxInput} placeholder="+91 ..." value={signupData.phone} onChange={e => setSignupData({ ...signupData, phone: e.target.value })} required />
+                  </div>
+                  <div className="form-group">
+                    <label style={labelStyle}>Username</label>
+                    <input style={luxInput} placeholder="username" value={signupData.username} onChange={e => setSignupData({ ...signupData, username: e.target.value })} required />
+                  </div>
+                  <div className="form-group">
+                    <label style={labelStyle}>Secret Password</label>
+                    <input style={luxInput} placeholder="••••••••" type="password" value={signupData.password} onChange={e => setSignupData({ ...signupData, password: e.target.value })} required />
+                  </div>
                 </div>
               )}
 
